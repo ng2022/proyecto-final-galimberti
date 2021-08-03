@@ -8,6 +8,17 @@
     text-align: center;
     line-height: 6vw; }
 
+.seccion2-home {
+  background-color: #FFFFFF; }
+
+.seccion3-home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center; }
+  .seccion3-home img {
+    height: 90%; }
+
 /** HEADER */
 /** NAVIGATION BAR */
 header {
@@ -95,3 +106,6 @@ body {
 
 h1 {
   font: 600 5vw "Space Grotesk", sans-serif; }
+
+h3 {
+  font: 100 56px "Space Grotesk", sans-serif; }

@@ -1,6 +1,8 @@
 
 // Home
 
+// Primera Seccion
+
 .seccion1-home{
     display: grid;
     grid-template-rows: 35vw 6vw;
@@ -12,4 +14,21 @@
         text-align: center;
         line-height: 6vw;
     }
+}
+
+// Segunda Seccion
+.seccion2-home{
+    background-color: $color-neutro;
+}
+
+// Tercera Seccion
+.seccion3-home{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+
+    img{
+        height: 90%;
+    };
 }
