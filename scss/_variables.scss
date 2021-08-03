@@ -7,10 +7,13 @@ $color-font: #000000;
 $color-neutro: #FFFFFF;
 
 // Tipografias
-$font-menu: 500 18px 'Space Grotesk', sans-serif;
-$font-footer: 100 12px 'Space Grotesk', sans-serif;
+$font-menu: 500 1.5vw 'Space Grotesk', sans-serif;
+$font-footer: 100 14px 'Space Grotesk', sans-serif;
 $font-display-small: 100 120px 'Space Grotesk', sans-serif;
-$font-display-big: 100 180px 'Space Grotesk', sans-serif;
+$font-display-big: 600 5vw 'Space Grotesk', sans-serif,;
 $font-titulo: 100 56px 'Space Grotesk', sans-serif;
 $font-texto: 100 36px 'Space Grotesk', sans-serif;
-$font-ok: 100 36px 'Space Grotesk', sans-serif;
+
+
+// Bordes
+$borde-superior: 1px solid $color-font;

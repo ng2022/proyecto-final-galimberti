@@ -1,0 +1,35 @@
+/** Footer */
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-auto-rows: 6rem;
+    column-gap: 30px;
+    align-self: center;
+    justify-self: center;
+    border-top: $borde-superior;
+        .footer-item{
+        font: $font-footer;
+        color: $color-font;
+        padding: 30px;
+        }
+        .item-logo{
+            padding: 30px;
+        }
+        ul{
+        list-style-type: none;
+        padding: 30px;
+            li{
+            display: inline;
+            padding-right: 10px;
+            }
+            a{
+            font: $font-footer;
+            color: $color-font;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+              }
+            }
+        }
+}

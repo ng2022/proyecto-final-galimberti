@@ -1,14 +1,20 @@
 /** HEADER */
 
 /** NAVIGATION BAR */
+header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
 
 nav {
     display: grid;
     grid-template-columns: 2fr 10fr;
     overflow: hidden;
-    position: fixed;
     background-color: $color-background;
     width: 100%;
+    border-bottom: $borde-superior;
+    border-top: $borde-superior;
     .logo{
       display: flex;
       flex-wrap: wrap;
@@ -36,10 +42,9 @@ nav {
           color: $color-font;
           text-decoration: none;
           padding: 14px;
-          border-left: 1px solid $color-font;
+          border-left: $borde-superior;
           &:hover {
             background-color: $color-neutro;
-
           }
         }
       }

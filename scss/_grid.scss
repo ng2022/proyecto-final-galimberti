@@ -1,0 +1,15 @@
+
+// Home
+
+.seccion1-home{
+    display: grid;
+    grid-template-rows: 35vw 6vw;
+    align-items: center;
+    justify-items: center;
+
+    .titulo-display{
+        padding: 0 12vw 0 12vw;
+        text-align: center;
+        line-height: 6vw;
+    }
+}
