@@ -1,0 +1,45 @@
+/** HEADER */
+/** NAVIGATION BAR */
+nav {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  overflow: hidden;
+  position: fixed;
+  background-color: #E8E8E7;
+  width: 100%; }
+  nav .logo {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 15px;
+    font: 500 18px "Space Grotesk", sans-serif; }
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    justify-self: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 15px; }
+    nav ul li {
+      display: grid;
+      font: 500 18px "Space Grotesk", sans-serif; }
+      nav ul li a {
+        text-align: center;
+        color: #000000;
+        text-decoration: none;
+        padding: 14px;
+        border-left: 1px solid #000000; }
+        nav ul li a:hover {
+          background-color: #FFFFFF; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font: 100 180px "Space Grotesk", sans-serif; }

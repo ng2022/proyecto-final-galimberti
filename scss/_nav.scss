@@ -1,0 +1,47 @@
+/** HEADER */
+
+/** NAVIGATION BAR */
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    overflow: hidden;
+    position: fixed;
+    background-color: $color-background;
+    width: 100%;
+    .logo{
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      flex-direction: row;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0;
+      padding: 15px;
+      font: $font-menu;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+      justify-self: flex-end;
+      list-style-type: none;
+      margin: 0;
+      padding-left: 15px;
+      li {
+        display: grid;
+        font: $font-menu;
+        a {
+          text-align: center;
+          color: $color-font;
+          text-decoration: none;
+          padding: 14px;
+          border-left: 1px solid $color-font;
+          &:hover {
+            background-color: $color-neutro;
+
+          }
+        }
+      }
+    }
+  }
