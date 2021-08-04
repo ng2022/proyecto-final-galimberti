@@ -19,6 +19,7 @@
 // Segunda Seccion
 .seccion2-home{
     background-color: $color-neutro;
+    height: 2vw;
 }
 
 // Tercera Seccion
@@ -27,8 +28,4 @@
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-items: center;
-
-    img{
-        height: 90%;
-    };
 }
