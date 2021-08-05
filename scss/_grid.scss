@@ -25,7 +25,7 @@
 // Tercera Seccion
 .seccion3-home{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-items: center;
 }
