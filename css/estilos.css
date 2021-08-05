@@ -14,13 +14,14 @@
 
 .seccion3-home {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(1rem, 1fr));
   align-items: center;
   justify-items: center; }
 
 /** HEADER */
 /** NAVIGATION BAR */
 header {
+  z-index: 2;
   position: -webkit-sticky;
   position: sticky;
   top: 0px; }
@@ -113,7 +114,8 @@ footer {
   width: 100%;
   border-left: 1px solid #000000; }
   .container-overlay .image {
-    padding: 5vw; }
+    padding: 5vw;
+    width: 100%; }
 
 .overlay-smile {
   position: absolute;
@@ -137,6 +139,9 @@ footer {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center; }
+  .text a {
+    font: 100 36px "Space Grotesk", sans-serif;
+    color: #FFFFFF; }
 
 /* Main Styles */
 * {
