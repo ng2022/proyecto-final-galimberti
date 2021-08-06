@@ -3,22 +3,21 @@
 @import "nav";
 @import "footer";
 @import "graficas";
+@import "font-fluid";
+
 
 
 /* Main Styles */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
 }
 
 body{
     background-color: $color-background;
-}
-
-h1{
-    font: $font-display-big;
-}
-
-h3{
-    font: $font-titulo;
 }

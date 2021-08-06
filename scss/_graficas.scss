@@ -4,14 +4,13 @@
 
 // Flecha Home page
     .flecha-home{
-        height: auto;
-        width: auto;
+        width: 100%;
     }
 
 // Efecto Texto Marquesina
     #marq {
         width: 100%;
-        height: 3.3vw; 
+        height: 7.3rem; 
         border: $borde-superior; 
         overflow: hidden; 
         white-space: nowrap; 
@@ -56,7 +55,7 @@
 
           .text {
             color: $color-neutro;
-            font: $font-texto;
+            font: $font-titulo;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -65,7 +64,7 @@
             transform: translate(-50%, -50%);
             text-align: center;
             a{
-                font: $font-texto;
+                font: $font-titulo;
                 color: $color-neutro;
             }
           }

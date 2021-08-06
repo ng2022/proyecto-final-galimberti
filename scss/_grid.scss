@@ -5,14 +5,18 @@
 
 .seccion1-home{
     display: grid;
-    grid-template-rows: 35vw 6vw;
     align-items: center;
     justify-items: center;
+    margin-top: 10rem;
 
     .titulo-display{
-        padding: 0 12vw 0 12vw;
-        text-align: center;
-        line-height: 6vw;
+        width: 80%;
+        margin-bottom: 6rem;
+    }
+
+    div{
+        margin-bottom: 6rem;
+        width: 45px;
     }
 }
 
@@ -28,4 +32,35 @@
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-items: center;
+}
+
+// Cuarta Seccion
+.seccion4-home{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+// Quinta Seccion
+.seccion5-home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+
+        .imagen-quinta-home{
+            width: 100%;
+            height: 100%;
+            
+            img{
+                width:100%;
+                height:100%;
+                object-fit:cover
+                }
+        }
+
+        .texto-quinta-home{
+            width: 70%;
+        }
 }

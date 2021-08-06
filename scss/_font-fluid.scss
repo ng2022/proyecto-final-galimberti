@@ -1,0 +1,32 @@
+h1{
+    font-size: 8rem;
+	font-size: clamp(3rem, 10vmin, 8rem);
+    line-height: 9rem;
+	line-height: clamp(4rem, 10vmin, 9rem);
+    color: $color-font;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+h2{
+    font-size: 5.6rem;
+	font-size: clamp(3rem, 10vmin, 5.6rem);
+    line-height: 5.6rem;
+	line-height: clamp(4rem, 10vmin, 5.6rem);
+    color: $color-font;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+h3{
+    font-size: 2.6rem;
+	font-size: clamp(2rem, 5vmin, 2.6rem);
+    line-height: 3rem;
+	line-height: clamp(2.6rem, 5vmin, 3rem);
+    color: $color-font;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
