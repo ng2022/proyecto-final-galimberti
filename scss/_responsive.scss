@@ -1,0 +1,59 @@
+// Responsive
+
+//  Menu Navegacion Responsive
+
+@media (max-width: 1024px){
+
+    header{
+        display: none;
+    }
+
+    .responsive{
+        display: grid;
+        background-color: $color-background;
+        
+        .mobile-container {
+            width: 100%;
+          }
+          
+          .topnav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: $borde-superior;
+
+                #myLinks {
+                    display: none;
+                }
+
+                a {
+                    padding: 14px 16px;
+                    color: $color-font;
+                    font: $font-menu;
+                    text-decoration: none;
+                    display: grid;
+                }
+
+                a.icon {
+                    font: $font-menu;
+                    color: $color-font;
+                    justify-items: end;
+                    padding-right: 40px;
+                    background-color: $color-neutro;
+                    border-bottom: $borde-superior;
+                    border-left: $borde-superior;
+                }
+          }
+
+          .logo{
+              justify-items: start;
+              border-bottom: $borde-superior;
+          }
+
+          .items-menu-responsive-container{
+              width: 100%;
+              display: grid;
+              align-items: baseline;
+              justify-items: start;
+          }
+    }
+}    

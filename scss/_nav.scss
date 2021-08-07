@@ -1,6 +1,9 @@
 /* HEADER */
 
-/* NAVIGATION BAR */
+/* Menu Navegacion Desktop */
+.responsive{
+  display: none;
+}
 
 header{
   z-index: 4;
@@ -22,7 +25,7 @@ nav {
           display: grid;
           align-self: center;
           justify-self: center;
-          }
+          }    
 
     ul {
       display: grid;

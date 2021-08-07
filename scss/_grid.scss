@@ -1,8 +1,7 @@
 
 // Home
 
-// Primera Seccion
-
+// Primera Seccion TITULAR + FLECHA
 .seccion1-home{
     display: grid;
     align-items: center;
@@ -20,13 +19,13 @@
     }
 }
 
-// Segunda Seccion
+// Segunda Seccion MARQUESINA 1
 .seccion2-home{
     background-color: $color-neutro;
     height: 2vw;
 }
 
-// Tercera Seccion
+// Tercera Seccion SMILES
 .seccion3-home{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -34,7 +33,7 @@
     justify-items: center;
 }
 
-// Cuarta Seccion
+// Cuarta Seccion PRODOTTI
 .seccion4-home{
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +41,7 @@
     justify-content: space-around;
 }
 
-// Quinta Seccion
+// Quinta Seccion CHI SIAMO
 .seccion5-home{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

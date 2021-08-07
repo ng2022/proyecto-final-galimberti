@@ -42,7 +42,10 @@
     width: 70%; }
 
 /* HEADER */
-/* NAVIGATION BAR */
+/* Menu Navegacion Desktop */
+.responsive {
+  display: none; }
+
 header {
   z-index: 4;
   position: -webkit-sticky;
@@ -194,6 +197,43 @@ h3 {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 100;
   text-align: left; }
+
+@media (max-width: 1024px) {
+  header {
+    display: none; }
+  .responsive {
+    display: grid;
+    background-color: #E8E8E7; }
+    .responsive .mobile-container {
+      width: 100%; }
+    .responsive .topnav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid #000000; }
+      .responsive .topnav #myLinks {
+        display: none; }
+      .responsive .topnav a {
+        padding: 14px 16px;
+        color: #000000;
+        font: 500 1.9rem "Space Grotesk", sans-serif;
+        text-decoration: none;
+        display: grid; }
+      .responsive .topnav a.icon {
+        font: 500 1.9rem "Space Grotesk", sans-serif;
+        color: #000000;
+        justify-items: end;
+        padding-right: 40px;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000; }
+    .responsive .logo {
+      justify-items: start;
+      border-bottom: 1px solid #000000; }
+    .responsive .items-menu-responsive-container {
+      width: 100%;
+      display: grid;
+      align-items: baseline;
+      justify-items: start; } }
 
 /* Main Styles */
 * {
