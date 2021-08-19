@@ -1,59 +1,122 @@
-// Responsive
+// Responsive 600px
+@media (max-width: 600px){
 
-//  Menu Navegacion Responsive
+// HOME
 
+// Tercera Seccion - SMILES
+        .container-overlay{
+            display: none;
+        }
+
+// Cuarta Seccion - PRODOTTI
+        .seccion4-home{
+            display: grid;
+            grid-template-columns: 1fr;
+            border-top: none;
+            border-bottom: none;
+
+            a:hover{
+                opacity: 100%;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-bottom: $borde-superior;
+                border-left: none;
+            }
+        }
+       
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// Responsive 1024px
 @media (max-width: 1024px){
 
-    header{
+//  Menu Responsive 1024px
+    .menu-desktop{
         display: none;
     }
+
+header{
+    z-index: 4;
+    position: sticky !important;
+    top: 0px;
+}
 
     .responsive{
         display: grid;
         background-color: $color-background;
-        
-        .mobile-container {
-            width: 100%;
-          }
-          
-          .topnav {
+        border-bottom: $borde-superior;
+
+        .topnav {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            border-bottom: $borde-superior;
 
-                #myLinks {
-                    display: none;
-                }
-
-                a {
-                    padding: 14px 16px;
-                    color: $color-font;
-                    font: $font-menu;
-                    text-decoration: none;
+                .logo{
                     display: grid;
+                    justify-items: center;
+                    align-items: center;
+                    padding: 14px 16px;
                 }
 
-                a.icon {
+                .icon {
                     font: $font-menu;
                     color: $color-font;
-                    justify-items: end;
-                    padding-right: 40px;
+                    text-decoration: none;
+                    text-align: center;
                     background-color: $color-neutro;
-                    border-bottom: $borde-superior;
                     border-left: $borde-superior;
+                    padding: 14px 16px;
                 }
-          }
-
-          .logo{
-              justify-items: start;
-              border-bottom: $borde-superior;
-          }
-
-          .items-menu-responsive-container{
-              width: 100%;
-              display: grid;
-              align-items: baseline;
-              justify-items: start;
-          }
+        }
     }
-}    
+
+    #myLinks {
+        display: none;
+    }
+
+        .items-menu-responsive-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            border-top: $borde-superior;
+
+            a{
+                width: 100%;
+                padding: 14px 16px;
+                color: $color-font;
+                font: $font-menu;
+                text-decoration: underline;
+                border-bottom: $borde-superior;
+                background-color: $color-neutro;
+            }
+        }
+
+
+// Primera Seccion - TITULAR
+.seccion1-home{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+// Segunda Seccion - MARQUESINA 1
+.container-overlay{
+    position:static;
+}
+
+}

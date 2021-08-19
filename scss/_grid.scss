@@ -1,65 +1,68 @@
 
 // Home
 
-// Primera Seccion TITULAR + FLECHA
-.seccion1-home{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    margin-top: 10rem;
+// Primera Seccion TITULAR
+        .seccion1-home{
+            display: grid;
+            justify-items: center;
+            margin-top: 15rem;
+            margin-bottom: 15rem;
 
-    .titulo-display{
-        width: 80%;
-        margin-bottom: 6rem;
-    }
-
-    div{
-        margin-bottom: 6rem;
-        width: 45px;
-    }
-}
+            .titulo-display{
+                width: 80%;
+            }
+        }
 
 // Segunda Seccion MARQUESINA 1
-.seccion2-home{
-    background-color: $color-neutro;
-    height: 2vw;
-}
+        .seccion2-home{
+            background-color: $color-neutro;
+            height: 2vw;
+        }
 
 // Tercera Seccion SMILES
-.seccion3-home{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    justify-items: center;
-}
+        .seccion3-home{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            justify-items: center;
+        }
 
 // Cuarta Seccion PRODOTTI
-.seccion4-home{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
+        .seccion4-home{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            border-top: $borde-superior;
+            border-bottom: $borde-superior;
+
+            a:hover{
+                opacity: 50%;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-left: $borde-superior;
+            }
+        }
 
 // Quinta Seccion CHI SIAMO
-.seccion5-home{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
+        .seccion5-home{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            justify-items: center;
 
-        .imagen-quinta-home{
-            width: 100%;
-            height: 100%;
-            
-            img{
-                width:100%;
-                height:100%;
-                object-fit:cover
+                .imagen-quinta-home{
+                    width: 100%;
+                    height: 100%;
+
+                    img{
+                        object-fit: cover;
+                    }
+                }
+
+                .texto-quinta-home{
+                    width: 70%;
                 }
         }
-
-        .texto-quinta-home{
-            width: 70%;
-        }
-}
