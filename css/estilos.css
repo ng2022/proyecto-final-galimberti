@@ -1,3 +1,26 @@
+.btn, .btn:hover, .btn-red, .btn-verde {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: 2px solid #000000;
+  background-color: #6378E5;
+  font: 500 1.9rem "Space Grotesk", sans-serif; }
+  .btn a, .btn:hover a, .btn-red a, .btn-verde a {
+    text-decoration: none;
+    color: #FFFFFF; }
+
+.btn:hover, .btn-red:hover, .btn-verde:hover {
+  background-color: #FFFFFF; }
+  .btn:hover a, .btn-red:hover a, .btn-verde:hover a {
+    color: #000000; }
+
+.btn-red {
+  background-color: #F76D57; }
+
+.btn-verde {
+  background-color: #00e813; }
+
 .seccion1-home {
   display: grid;
   justify-items: center;
@@ -10,37 +33,47 @@
   background-color: #FFFFFF;
   height: 2vw; }
 
-.seccion3-home {
+.prodotti-home {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center; }
-
-.seccion4-home {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000; }
-  .seccion4-home a:hover {
+  border-top: 1px solid #000000; }
+  .prodotti-home a:hover {
     opacity: 50%; }
-  .seccion4-home img {
+  .prodotti-home img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-left: 1px solid #000000; }
 
-.seccion5-home {
+.seccion-cta-home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  justify-items: center; }
-  .seccion5-home .imagen-quinta-home {
+  justify-items: center;
+  border-top: 1px solid #000000; }
+  .seccion-cta-home img {
     width: 100%;
-    height: 100%; }
-    .seccion5-home .imagen-quinta-home img {
-      object-fit: cover; }
-  .seccion5-home .texto-quinta-home {
-    width: 70%; }
+    height: 100%;
+    object-fit: cover; }
+  .seccion-cta-home .texto-quinta-home {
+    padding: 8rem; }
+
+.espacio-titulo-texto {
+  margin-top: 1rem; }
+
+.container-patreon {
+  padding: 10rem 40rem;
+  background-image: linear-gradient(rgba(72, 72, 72, 0.584), rgba(85, 85, 85, 0.584)), url("/imagenes/sostienici-su-patreon-nuovi-normali.jpg") !important;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .container-patreon h2 {
+    color: #FFFFFF;
+    text-align: center; }
+  .container-patreon h3 {
+    color: #FFFFFF;
+    text-align: center; }
 
 /* HEADER */
 .responsive {
@@ -93,7 +126,7 @@ footer {
   justify-self: center;
   border-top: 1px solid #000000; }
   footer .footer-item {
-    font: 100 14px "Space Grotesk", sans-serif;
+    font: 300 14px "Space Grotesk", sans-serif;
     color: #000000;
     padding: 30px; }
   footer .item-logo {
@@ -105,7 +138,7 @@ footer {
       display: inline;
       padding-right: 10px; }
     footer ul a {
-      font: 100 14px "Space Grotesk", sans-serif;
+      font: 300 14px "Space Grotesk", sans-serif;
       color: #000000;
       text-decoration: none; }
       footer ul a:hover {
@@ -119,7 +152,7 @@ footer {
   overflow: hidden;
   white-space: nowrap;
   background-color: #FFFFFF;
-  font: 600 5.6rem "Space Grotesk", sans-serif; }
+  font: 400 5.6rem "Space Grotesk", sans-serif; }
 
 #orig {
   display: inline-block;
@@ -131,40 +164,6 @@ footer {
     transform: translatex(0); }
   100% {
     transform: translatex(-50%); } }
-
-.container-overlay {
-  position: relative;
-  width: 100%;
-  border-left: 1px solid #000000; }
-  .container-overlay .image {
-    padding: 5vw;
-    width: 100%; }
-
-.overlay-smile {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  background-color: #6378E5; }
-
-.container-overlay:hover .overlay-smile {
-  opacity: 1; }
-
-.text {
-  color: #FFFFFF;
-  font: 600 5.6rem "Space Grotesk", sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center; }
-  .text a {
-    font: 600 5.6rem "Space Grotesk", sans-serif;
-    color: #FFFFFF; }
 
 h1 {
   font-size: 8.3rem;
@@ -196,22 +195,36 @@ h3 {
   font-weight: 100;
   text-align: left; }
 
-@media (max-width: 600px) {
-  .container-overlay {
-    display: none; }
-  .seccion4-home {
+@media (max-width: 576px) {
+  .prodotti-home {
     display: grid;
     grid-template-columns: 1fr;
     border-top: none;
     border-bottom: none; }
-    .seccion4-home a:hover {
+    .prodotti-home a:hover {
       opacity: 100%; }
-    .seccion4-home img {
+    .prodotti-home img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-bottom: 1px solid #000000;
-      border-left: none; } }
+      border-left: none; }
+  .seccion-cta-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center; }
+    .seccion-cta-home img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .seccion-cta-home .texto-quinta-home {
+      padding: 4rem;
+      grid-row: 1; }
+  .container-patreon {
+    padding: 4rem; }
+  .container-contattaci {
+    padding: 4rem; } }
 
 @media (max-width: 1024px) {
   .menu-desktop {
@@ -262,7 +275,11 @@ h3 {
     margin-top: 5rem;
     margin-bottom: 5rem; }
   .container-overlay {
-    position: static; } }
+    position: static; }
+  .seccion-cta-home .texto-quinta-home {
+    padding: 4rem; }
+  .container-patreon {
+    padding: 4rem; } }
 
 /* Main Styles */
 * {

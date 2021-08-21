@@ -1,10 +1,11 @@
 
-// Coloers
+// Colores
 $color-background: #E8E8E7;
 $color-primario: #6378E5;
 $color-secundario: #F76D57;
 $color-font: #000000;
 $color-neutro: #FFFFFF;
+$color-verde: #00e813;
 
 // Tipografias
 // Menu
@@ -15,9 +16,11 @@ $font-display-big: 600 8rem 'Space Grotesk', sans-serif;
 $font-titulo: 600 5.6rem 'Space Grotesk', sans-serif;
 $font-titulo-line-height: 8.6rem;
 // Texto
-$font-texto: 100 3.6rem 'Space Grotesk', sans-serif;
+$font-texto: 300 3.6rem 'Space Grotesk', sans-serif;
+// Marquesina
+$font-titulo-medium: 400 5.6rem 'Space Grotesk', sans-serif;
 // Footer
-$font-footer: 100 14px 'Space Grotesk', sans-serif;
+$font-footer: 300 14px 'Space Grotesk', sans-serif;
 
 
 // Bordes
@@ -25,3 +28,36 @@ $borde-superior: 1px solid $color-font;
 
 
 // Botones
+//DESKTOP
+.btn{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: 2px solid $color-font;
+    background-color: $color-primario;
+    font: $font-menu;
+
+    a{
+        text-decoration: none;
+        color: $color-neutro;
+    }
+}
+
+.btn:hover{
+    @extend .btn;
+    background-color: $color-neutro;
+    a{
+        color: $color-font;
+    }
+}
+
+.btn-red{
+    @extend .btn;
+    background-color: $color-secundario;
+}
+
+.btn-verde{
+    @extend .btn;
+    background-color: $color-verde;
+}

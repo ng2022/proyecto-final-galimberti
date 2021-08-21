@@ -1,15 +1,10 @@
-// Responsive 600px
-@media (max-width: 600px){
+// Responsive MOBILE 600px
+@media (max-width: 576px){
 
 // HOME
 
-// Tercera Seccion - SMILES
-        .container-overlay{
-            display: none;
-        }
-
-// Cuarta Seccion - PRODOTTI
-        .seccion4-home{
+// Tercera Seccion - PRODOTTI
+        .prodotti-home{
             display: grid;
             grid-template-columns: 1fr;
             border-top: none;
@@ -28,6 +23,34 @@
             }
         }
        
+// Cuarta Seccion CHI SIAMO
+.seccion-cta-home{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+
+            img{
+                width: 100%;
+                height:100%;
+                object-fit:cover;
+            }
+
+        .texto-quinta-home{
+            padding: 4rem;
+            grid-row: 1;
+        }
+}
+
+// Septima Seccion PATREON
+.container-patreon{
+    padding: 4rem;
+}
+
+// Octava Seccion CONTATTACI
+.container-contattaci{
+    padding: 4rem;
+}
 
 }
 
@@ -41,7 +64,7 @@
 
 
 
-// Responsive 1024px
+// Responsive TABLET 1024px
 @media (max-width: 1024px){
 
 //  Menu Responsive 1024px
@@ -117,6 +140,18 @@ header{
 // Segunda Seccion - MARQUESINA 1
 .container-overlay{
     position:static;
+}
+
+// Cuarta Seccion CHI SIAMO
+.seccion-cta-home{
+        .texto-quinta-home{
+            padding: 4rem;
+        }
+}
+
+// Septima Seccion PATREON
+.container-patreon{
+    padding: 4rem;
 }
 
 }

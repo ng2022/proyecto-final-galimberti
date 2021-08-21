@@ -12,7 +12,7 @@
           overflow: hidden; 
           white-space: nowrap; 
           background-color: $color-neutro; 
-          font: $font-titulo; 
+          font: $font-titulo-medium; 
           }
           #orig {
           display: inline-block;
@@ -23,47 +23,3 @@
             0% {transform: translatex(0); }
             100% {transform: translatex(-50%); }
           }
-  
-
-  // Tercera Seccion SMILES
-  // (Overlay Imagenes Smile)
-      .container-overlay {
-          position: relative;
-          width: 100%;
-          border-left: $borde-superior;
-
-          .image{
-              padding: 5vw;
-              width: 100%;
-          }
-        }
-
-          .overlay-smile {
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              opacity: 0;
-              background-color: $color-primario;
-            }
-            
-            .container-overlay:hover .overlay-smile {
-              opacity: 1;
-            }
-
-            .text {
-              color: $color-neutro;
-              font: $font-titulo;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-              text-align: center;
-              a{
-                  font: $font-titulo;
-                  color: $color-neutro;
-              }
-            }

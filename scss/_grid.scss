@@ -19,20 +19,12 @@
             height: 2vw;
         }
 
-// Tercera Seccion SMILES
-        .seccion3-home{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            align-items: center;
-            justify-items: center;
-        }
 
-// Cuarta Seccion PRODOTTI
-        .seccion4-home{
+// Tercera Seccion PRODOTTI
+        .prodotti-home{
             display: grid;
             grid-template-columns: repeat(3,1fr);
             border-top: $borde-superior;
-            border-bottom: $borde-superior;
 
             a:hover{
                 opacity: 50%;
@@ -46,23 +38,47 @@
             }
         }
 
-// Quinta Seccion CHI SIAMO
-        .seccion5-home{
+
+// Cuarta Seccion CHI SIAMO
+        .seccion-cta-home{
             display: grid;
             grid-template-columns: repeat(2,1fr);
             align-items: center;
             justify-items: center;
-
-                .imagen-quinta-home{
-                    width: 100%;
-                    height: 100%;
+            border-top: $borde-superior;
 
                     img{
-                        object-fit: cover;
+                        width: 100%;
+                        height:100%;
+                        object-fit:cover;
                     }
-                }
 
                 .texto-quinta-home{
-                    width: 70%;
+                    padding: 8rem;
                 }
+        }
+
+        .espacio-titulo-texto{
+            margin-top: 1rem;
+        }      
+
+
+// Septima Seccion PATREON
+        .container-patreon{
+            padding: 10rem 40rem;
+            background-image: linear-gradient(rgba(72, 72, 72, 0.584), rgba(85, 85, 85, 0.584)), url("/imagenes/sostienici-su-patreon-nuovi-normali.jpg") !important;
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            h2{
+                color:$color-neutro;
+                text-align: center;
+            }
+
+            h3{
+                color: $color-neutro;
+                text-align: center;
+            }
         }
