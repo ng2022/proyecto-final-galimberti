@@ -1,4 +1,4 @@
-// Responsive MOBILE 600px
+// Responsive MOBILE 576px
 @media (max-width: 576px){
 
 // HOME
@@ -51,6 +51,48 @@
 .container-contattaci{
     padding: 4rem;
 }
+
+
+// PAGINA PRODOTTI
+
+// Primera Seccion PRODOTTI
+    .prodotti-pag-prodotti{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border-top: $borde-superior;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-left: $borde-superior;
+            }
+    }
+
+
+// PAGINA CHI SIAMO
+
+// Primera Seccion Chi siamo
+    
+.primera-seccion-chisiamo{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    border-top: none;
+    border-bottom: none;
+    
+        img{
+            width: 100%;
+            height:100%;
+            object-fit:cover;
+        }
+    
+        .texto-primera-chisiamo{
+            padding: 4rem;
+        }
+}
+    .espacio-titulo-texto{
+        margin-top: 1rem;
+    }
 
 }
 
@@ -128,6 +170,8 @@ header{
         }
 
 
+// HOME
+
 // Primera Seccion - TITULAR
 .seccion1-home{
     display: grid;
@@ -152,6 +196,35 @@ header{
 // Septima Seccion PATREON
 .container-patreon{
     padding: 4rem;
+}
+
+
+
+
+// PAGINA CHI SIAMO
+
+// Primera Seccion Chi siamo
+.primera-seccion-chisiamo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    border-top: $borde-superior;
+
+            img{
+                width: 100%;
+                height:100%;
+                object-fit:cover;
+            }
+
+        .texto-primera-chisiamo{
+            padding: 4rem;
+
+        }
+}
+
+.espacio-titulo-texto{
+    margin-top: 1rem;
 }
 
 }
