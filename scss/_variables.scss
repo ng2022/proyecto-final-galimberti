@@ -29,6 +29,7 @@ $borde-superior: 1px solid $color-font;
 
 // Botones
 //DESKTOP
+// Botones principales
 .btn{
     width: 100%;
     height: auto;
@@ -60,4 +61,31 @@ $borde-superior: 1px solid $color-font;
 .btn-verde{
     @extend .btn;
     background-color: $color-verde;
+}
+
+
+// Mapas Background Chi Siamo
+$coloresbg: (
+    chisiamo: $color-primario,
+    facciamocose: $color-background,
+    progetto: $color-secundario,
+);
+
+@each $name-bg, $bg-color in $coloresbg {
+    .bg-bloque--#{$name-bg} {
+        background-color: $bg-color;
+    }
+}
+
+
+// Mapas Colores Font Chi Siamo
+$font-color-chisiamo: (
+    fontbianco: $color-neutro,
+    fontnero: $color-font,
+);
+
+@each $name-font, $font-color-chi in $font-color-chisiamo {
+    .font-color-chisiamo--#{$name-font} {
+        color: $font-color-chi !important;
+    }
 }

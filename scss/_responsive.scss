@@ -227,4 +227,21 @@ header{
     margin-top: 1rem;
 }
 
+// Bloques Textos Chi siamo
+.bloque-textos-chisiamo{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    border-bottom: $borde-superior;
+
+    h1{
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
+
+    h3{
+        padding-top: 2rem;
+    }
+}
+
 }

@@ -107,12 +107,12 @@
 
 // PAGINA CHI SIAMO
 
+// Primera Seccion Chi siamo
 .primera-seccion-chisiamo{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     justify-items: center;
-    border-top: $borde-superior;
 
             img{
                 width: 70%;
@@ -122,10 +122,22 @@
 
         .texto-primera-chisiamo{
             padding: 10rem;
-
         }
 }
 
 .espacio-titulo-texto{
     margin-top: 1rem;
 }     
+
+
+// Bloques Textos Chi siamo
+.bloque-textos-chisiamo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    border-bottom: $borde-superior;
+
+    h1,h3{
+        padding: 5rem;
+    }
+}
