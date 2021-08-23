@@ -17,51 +17,58 @@ $font-titulo: 600 5.6rem 'Space Grotesk', sans-serif;
 $font-titulo-line-height: 8.6rem;
 // Texto
 $font-texto: 300 3.6rem 'Space Grotesk', sans-serif;
+// Acordeon
+$font-acordeon: 300 2.4rem 'Space Grotesk', sans-serif;
 // Marquesina
 $font-titulo-medium: 400 5.6rem 'Space Grotesk', sans-serif;
 // Footer
-$font-footer: 300 14px 'Space Grotesk', sans-serif;
+$font-footer: 300 1.4rem 'Space Grotesk', sans-serif;
 
 
 // Bordes
 $borde-superior: 1px solid $color-font;
 
 
+
 // Botones
 //DESKTOP
 // Botones principales
-.btn{
+.boton{
+    display: inline-block;
     width: 100%;
-    height: auto;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-top: 2rem;
+    text-decoration:none;
+    text-align:center;
+    font: $font-menu;
+    color: $color-neutro;
     border: 2px solid $color-font;
     background-color: $color-primario;
-    font: $font-menu;
-
-    a{
-        text-decoration: none;
-        color: $color-neutro;
-    }
+    transition: all 0.4s;
 }
 
-.btn:hover{
-    @extend .btn;
-    background-color: $color-neutro;
-    a{
-        color: $color-font;
-    }
-}
+.boton:hover{
+    color:$color-font;
+    background-color:$color-neutro;
+}  
 
-.btn-red{
-    @extend .btn;
+.boton-red{
+    @extend .boton;
     background-color: $color-secundario;
 }
 
-.btn-verde{
-    @extend .btn;
+.boton-verde{
+    @extend .boton;
     background-color: $color-verde;
 }
+
+.boton-assumiamo{
+    @extend .boton;
+    width: 80%;
+    margin-top: 0;
+}
+
+
 
 
 // Mapas Background Chi Siamo
@@ -76,6 +83,7 @@ $coloresbg: (
         background-color: $bg-color;
     }
 }
+
 
 
 // Mapas Colores Font Chi Siamo

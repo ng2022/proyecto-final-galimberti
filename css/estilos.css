@@ -1,25 +1,29 @@
-.btn, .btn:hover, .btn-red, .btn-verde {
+.boton, .boton-red, .boton-verde, .boton-assumiamo {
+  display: inline-block;
   width: 100%;
-  height: auto;
-  padding: 1rem;
+  padding: 1.5rem;
   margin-top: 2rem;
+  text-decoration: none;
+  text-align: center;
+  font: 500 1.9rem "Space Grotesk", sans-serif;
+  color: #FFFFFF;
   border: 2px solid #000000;
   background-color: #6378E5;
-  font: 500 1.9rem "Space Grotesk", sans-serif; }
-  .btn a, .btn:hover a, .btn-red a, .btn-verde a {
-    text-decoration: none;
-    color: #FFFFFF; }
+  transition: all 0.4s; }
 
-.btn:hover, .btn-red:hover, .btn-verde:hover {
+.boton:hover, .boton-red:hover, .boton-verde:hover, .boton-assumiamo:hover {
+  color: #000000;
   background-color: #FFFFFF; }
-  .btn:hover a, .btn-red:hover a, .btn-verde:hover a {
-    color: #000000; }
 
-.btn-red {
+.boton-red {
   background-color: #F76D57; }
 
-.btn-verde {
+.boton-verde {
   background-color: #00e813; }
+
+.boton-assumiamo {
+  width: 80%;
+  margin-top: 0; }
 
 .bg-bloque--chisiamo {
   background-color: #6378E5; }
@@ -123,6 +127,46 @@
   .bloque-textos-chisiamo h1, .bloque-textos-chisiamo h3 {
     padding: 5rem; }
 
+.container-titulo-assumiamo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: start; }
+
+.titulo-assumiamo {
+  padding: 5rem; }
+
+.texto-assumiamo {
+  padding: 5rem; }
+
+.accordion {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  border-top: 1px solid #000000 !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  width: 100%;
+  padding: 1.8rem 5rem;
+  background-color: #FFFFFF;
+  cursor: pointer; }
+
+.active, .accordion:hover {
+  background-color: #6378E5; }
+
+.panel {
+  padding: 5rem;
+  display: none;
+  background-color: #FFFFFF;
+  overflow: hidden; }
+
+.container-oferta {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  align-items: flex-start;
+  justify-items: right; }
+  .container-oferta a {
+    justify-items: right; }
+
 /* HEADER */
 .responsive {
   display: none; }
@@ -174,7 +218,7 @@ footer {
   justify-self: center;
   border-top: 1px solid #000000; }
   footer .footer-item {
-    font: 300 14px "Space Grotesk", sans-serif;
+    font: 300 1.4rem "Space Grotesk", sans-serif;
     color: #000000;
     padding: 30px; }
   footer .item-logo {
@@ -186,7 +230,7 @@ footer {
       display: inline;
       padding-right: 10px; }
     footer ul a {
-      font: 300 14px "Space Grotesk", sans-serif;
+      font: 300 1.4rem "Space Grotesk", sans-serif;
       color: #000000;
       text-decoration: none; }
       footer ul a:hover {
@@ -243,6 +287,16 @@ h3 {
   font-weight: 100;
   text-align: left; }
 
+h4 {
+  font-size: 1.8rem;
+  font-size: clamp(2rem, 5vmin, 1.8rem);
+  line-height: 2.1rem;
+  line-height: clamp(2.6rem, 5vmin, 2.1rem);
+  color: #000000;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 100;
+  text-align: left; }
+
 @media (max-width: 576px) {
   .prodotti-home {
     display: grid;
@@ -294,7 +348,26 @@ h3 {
     .primera-seccion-chisiamo .texto-primera-chisiamo {
       padding: 4rem; }
   .espacio-titulo-texto {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  .container-titulo-assumiamo {
+    grid-template-columns: 1fr;
+    justify-items: left; }
+  .titulo-assumiamo {
+    padding: 2rem; }
+  .texto-assumiamo {
+    padding: 2rem;
+    padding-top: 0; }
+  .accordion {
+    grid-template-columns: 1fr;
+    padding: 1.8rem 3rem; }
+  .panel {
+    padding: 2rem 3rem; }
+  .container-oferta {
+    grid-template-columns: 1fr;
+    justify-items: left; }
+    .container-oferta a {
+      margin-top: 2rem;
+      margin-bottom: 2rem; } }
 
 @media (max-width: 1024px) {
   .menu-desktop {
@@ -373,7 +446,18 @@ h3 {
       padding-top: 4rem;
       padding-bottom: 0; }
     .bloque-textos-chisiamo h3 {
-      padding-top: 2rem; } }
+      padding-top: 2rem; }
+  .accordion {
+    grid-template-columns: 1fr;
+    padding: 1.8rem 3rem; }
+  .panel {
+    padding: 2rem 3rem; }
+  .container-oferta {
+    grid-template-columns: 1fr;
+    justify-items: left; }
+    .container-oferta a {
+      margin-top: 2rem;
+      margin-bottom: 2rem; } }
 
 /* Main Styles */
 * {

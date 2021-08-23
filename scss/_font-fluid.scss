@@ -30,3 +30,15 @@ h3{
     font-weight: 100;
     text-align: left;
 }
+
+
+h4{
+    font-size: 1.8rem;
+	font-size: clamp(2rem, 5vmin, 1.8rem);
+    line-height: 2.1rem;
+	line-height: clamp(2.6rem, 5vmin, 2.1rem);
+    color: $color-font;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 100;
+    text-align: left;
+}

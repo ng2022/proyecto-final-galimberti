@@ -1,5 +1,5 @@
 
-// Home
+// ///////////////// Home
 
 // Primera Seccion TITULAR
         .seccion1-home{
@@ -85,7 +85,7 @@
 
 
 
-// PAGINA PRODOTTI
+// ///////////////// PAGINA PRODOTTI
 
 // Primera Seccion PRODOTTI
         .prodotti-pag-prodotti{
@@ -105,7 +105,7 @@
 
         
 
-// PAGINA CHI SIAMO
+// ///////////////// PAGINA CHI SIAMO
 
 // Primera Seccion Chi siamo
 .primera-seccion-chisiamo{
@@ -141,3 +141,59 @@
         padding: 5rem;
     }
 }
+
+
+
+
+// ///////////////// PAGINA ASSUMIAMO
+
+// Primera Seccion - Titulo Pagina
+
+.container-titulo-assumiamo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: start;
+}
+.titulo-assumiamo{
+    padding: 5rem;
+}
+.texto-assumiamo{
+    padding: 5rem;
+}
+
+
+// Segunda Seccion - Acordeon
+.accordion {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    border-top: $borde-superior !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    width: 100%;
+    padding: 1.8rem 5rem;
+    background-color: $color-neutro;
+    cursor: pointer;
+  }
+  
+  .active, .accordion:hover {
+    background-color: $color-primario; 
+  }
+  
+  .panel {
+    padding: 5rem;
+    display: none;
+    background-color: $color-neutro;
+    overflow: hidden;
+  }
+
+  .container-oferta{
+      display: grid;
+      grid-template-columns: 7fr 5fr;
+      align-items:flex-start;
+      justify-items: right;
+
+      a{
+          justify-items: right;
+      }
+  }
