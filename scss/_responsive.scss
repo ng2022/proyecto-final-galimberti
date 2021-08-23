@@ -77,8 +77,8 @@
 .primera-seccion-chisiamo{
     display: grid;
     grid-template-columns: 1fr !important;
-    border-top: none;
-    border-bottom: none;
+    border-top: none !important;
+    border-bottom: none !important;
     
         img{
             width: 100%;
@@ -131,7 +131,68 @@
           margin-top: 2rem;
           margin-bottom: 2rem;
       }
-  }
+}
+
+  // ///////////////// CONTATTACI
+
+  // Segunda Seccion - 2 FORM CONTATTI
+  .container-contatti{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    border-top: $borde-superior;
+
+    h3{
+        font-weight: 600;
+        font-size: 3.5rem;
+    }
+
+    .bloque-contatti{
+        padding: 10rem;
+        padding-top: 5rem;
+        border-top: $borde-superior;
+
+        .form-contatti{
+
+              .bloque-input-contatti{
+                  display: grid;
+                  grid-template-rows: repeat(2,1fr);
+                  align-items: end;
+  
+                  .estilo-label{
+                      padding-top: 1rem;
+                  }
+
+                  .estilo-input{
+                      height: 5rem;
+                      border: $borde-form-contatti;
+                      padding-left: 1rem;
+                      font-family: 'Space Grotesk';
+                      font-weight: 300;
+                      font-size: 2rem;
+                  }
+              }
+
+              .bloque-mensaje-contatti{
+                  display: grid;
+                  grid-template-rows: 1fr 2fr;
+                  align-items: end;
+
+                  .estilo-label{
+                      padding-top: 1rem;
+                  }
+
+                  .estilo-mensaje{
+                      border: $borde-form-contatti;
+                      padding-left: 1rem;
+                  }
+              }
+
+              .boton-form-contatti{
+                  margin-top: 4rem;
+              }
+        }
+    }
+}
 
 }
 
@@ -306,5 +367,66 @@ header{
           margin-bottom: 2rem;
       }
   }
+
+
+    // ///////////////// CONTATTACI
+
+  // Segunda Seccion - 2 FORM CONTATTI
+  .container-contatti{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-top: $borde-superior;
+
+    h3{
+        font-weight: 600;
+        font-size: 3.5rem;
+    }
+
+    .bloque-contatti{
+        padding: 5rem;
+        padding-top: 5rem;
+
+        .form-contatti{
+
+              .bloque-input-contatti{
+                  display: grid;
+                  grid-template-rows: repeat(2,1fr);
+                  align-items: end;
+  
+                  .estilo-label{
+                      padding-top: 1rem;
+                  }
+
+                  .estilo-input{
+                      height: 5rem;
+                      border: $borde-form-contatti;
+                      padding-left: 1rem;
+                      font-family: 'Space Grotesk';
+                      font-weight: 300;
+                      font-size: 2rem;
+                  }
+              }
+
+              .bloque-mensaje-contatti{
+                  display: grid;
+                  grid-template-rows: 1fr 2fr;
+                  align-items: end;
+
+                  .estilo-label{
+                      padding-top: 1rem;
+                  }
+
+                  .estilo-mensaje{
+                      border: $borde-form-contatti;
+                      padding-left: 1rem;
+                  }
+              }
+
+              .boton-form-contatti{
+                  margin-top: 4rem;
+              }
+        }
+    }
+}
 
 }
